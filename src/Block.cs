@@ -31,7 +31,7 @@ public class BlockType
 		Mesh = ShapeUtil.Shape2DToMesh(Shape);
 		Area = ShapeUtil.Shape2DArea(Shape);
 		Mass = density * Area;
-		Health = durability * Mass;
+		Health = durability * Area;
 	}
 }
 
