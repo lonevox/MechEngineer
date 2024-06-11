@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://bjbnoufjxivoa"]
+
+[ext_resource type="Script" path="res://src/World.cs" id="2_a4nwr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1n6s7"]
+size = Vector2(120, 20)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+position = Vector2(145, -123)
+mass = 1000.0
+gravity_scale = 0.0
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+shape = SubResource("RectangleShape2D_1n6s7")
+
+[node name="World" type="Node2D" parent="."]
+position = Vector2(-23, -50)
+script = ExtResource("2_a4nwr")
+
+[node name="Camera2D" type="Camera2D" parent="."]
