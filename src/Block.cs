@@ -1,7 +1,7 @@
 using Godot;
-using RapierTest.Util;
+using MechGrinder.Util;
 
-namespace RapierTest;
+namespace MechGrinder;
 
 /// <summary>
 /// 

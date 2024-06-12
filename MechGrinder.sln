@@ -1,6 +1,6 @@
 ﻿Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MechEngineer", "MechEngineer.csproj", "{64BF3F4A-B9DD-461C-BF25-7EE5F72B49B0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MechGrinder", "MechGrinder.csproj", "{64BF3F4A-B9DD-461C-BF25-7EE5F72B49B0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

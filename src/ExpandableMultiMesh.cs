@@ -2,7 +2,7 @@ using System;
 using System.Diagnostics;
 using Godot;
 
-namespace RapierTest;
+namespace MechGrinder;
 
 /// <summary>
 /// A partial C# reimplementation of MultiMesh that automatically expands the multi mesh buffer whenever InstanceCount would exceed it.

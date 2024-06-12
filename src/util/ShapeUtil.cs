@@ -1,7 +1,7 @@
 using System;
 using Godot;
 
-namespace RapierTest.Util;
+namespace MechGrinder.Util;
 
 public static class ShapeUtil
 {

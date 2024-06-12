@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using Godot;
-using RapierTest.Util;
+using MechGrinder.Util;
 
-namespace RapierTest;
+namespace MechGrinder;
 
 public partial class World : Node2D
 {

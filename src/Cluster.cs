@@ -2,9 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using Godot;
-using RapierTest.Util;
+using MechGrinder.Util;
 
-namespace RapierTest;
+namespace MechGrinder;
 
 public partial class Cluster : RigidBody2D
 {
