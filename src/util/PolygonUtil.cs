@@ -49,15 +49,15 @@ public static class PolygonUtil
 		return mesh;
 	}
 
-	public static Vector2[] CirclePolygon(float radius, int segments)
+	public static Vector2[] RegularConvexPolygon(int sides, float radius)
 	{
-		if (segments < 3)
-			throw new ArgumentException("Circle polygon must have more than 3 segments.");
+		if (sides < 3)
+			throw new ArgumentException("Regular convex polygon must have 3 or more sides.");
 		
-		float angleDelta = MathF.PI * 2 / segments;
+		float angleDelta = MathF.PI * 2 / sides;
 		Vector2 vector = new Vector2(radius, 0);
-		Vector2[] polygon = new Vector2[segments];
-		for (int i = 0; i < segments; i++)
+		Vector2[] polygon = new Vector2[sides];
+		for (int i = 0; i < sides; i++)
 		{
 			polygon[i] = vector;
 			vector = vector.Rotated(angleDelta);

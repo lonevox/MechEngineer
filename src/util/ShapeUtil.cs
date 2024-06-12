@@ -28,7 +28,7 @@ public static class ShapeUtil
 
 	public static Mesh CircleShape2DToMesh(CircleShape2D shape, int radialSegments)
 	{
-		Vector2[] polygon = PolygonUtil.CirclePolygon(shape.Radius, radialSegments);
+		Vector2[] polygon = PolygonUtil.RegularConvexPolygon(radialSegments, shape.Radius);
 		return PolygonUtil.PolygonToMesh(polygon);
 	}
 

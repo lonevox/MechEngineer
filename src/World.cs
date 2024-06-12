@@ -30,7 +30,7 @@ public partial class World : Node2D
 		AddBlockType(BlockType.Builder("Small TriHull", new ConvexPolygonShape2D { Points = smallTrianglePolygon }).Density(1).Durability(1).Build());
 		Vector2[] mediumTrianglePolygon = { Vector2.Zero, new(20, 0), new(20, 20) };
 		AddBlockType(BlockType.Builder("Medium TriHull", new ConvexPolygonShape2D { Points = mediumTrianglePolygon }).Density(1).Durability(1).Build());
-		AddBlockType(BlockType.Builder("Circle", new ConvexPolygonShape2D { Points = PolygonUtil.CirclePolygon(2.5f, 4) }).Density(1).Durability(1).Build());
+		AddBlockType(BlockType.Builder("Diamond", new ConvexPolygonShape2D { Points = PolygonUtil.RegularConvexPolygon(4, 2.5f) }).Density(1).Durability(1).Build());
 
 		Cluster cluster = new Cluster();
 		AddCluster(cluster);
